@@ -18,7 +18,7 @@
         "CVC/CVV code" => (string) $_POST['cvvcode'], "Your gender" => (string) $_POST['gender']);
     foreach($dat_arr as $x => $value) {
         if($value){
-            echo $x . ": " . $value . " (" . strlen($value) . " characters)<br><br>";
+            echo $x . ": " . $value . " (" . mb_strlen($value) . " characters)<br><br>";
         }
     }
     ?>
