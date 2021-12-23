@@ -64,6 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $flag = 1;
     }
     if ($flag == 0) {
-        Header("Location:". 'http://Form/Thanks.php');
+        //Header("Location:". 'http://Form/Thanks.php');
+        Header('Refresh:0; url=Thanks.php');
     }
 }

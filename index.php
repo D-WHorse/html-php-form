@@ -15,8 +15,7 @@ include 'val.php';
 </head>
 
 <body>
-    <form class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post"><?php echo $errors['success']?>
-     
+    <form class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
         <fieldset>
             <h2 class="form__title">Form</h2>
             <legend>Please enter your card data:</legend>
