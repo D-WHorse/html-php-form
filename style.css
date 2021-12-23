@@ -80,3 +80,14 @@ body {
     font-size: 12px;
     color: #e0e0e0;
 }
+
+.text__error {
+    color: #e41f30;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 10px;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    z-index: -1;
+}

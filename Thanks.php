@@ -1,3 +1,7 @@
+<?php
+require 'val.php';
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,14 +17,12 @@
     <p>Card details:</p><br>
 
     <?php
-    $dat_arr = array("First name" => (string) $_POST['fname'], "Last name" => (string) $_POST['lname'],
-        "Card number" => (string) $_POST['cnumber'], "Card date" => (string) $_POST['cdate'],
-        "CVC/CVV code" => (string) $_POST['cvvcode'], "Your gender" => (string) $_POST['gender']);
-    foreach($dat_arr as $x => $value) {
-        if($value){
-            echo $x . ": " . $value . " (" . mb_strlen($value) . " characters)<br><br>";
-        }
-    }
+    echo "First Name" . ": " . $fname . " (" . mb_strlen($fname) . " characters)<br><br>";
+    echo "Last Name" . ": " . $lname . " (" . mb_strlen($lname) . " characters)<br><br>";
+    echo "Card Number" . ": " . $cnumber . " (" . mb_strlen($cnumber) . " characters)<br><br>";
+    echo "Card Date" . ": " . $cdate . " (" . mb_strlen($cdate) . " characters)<br><br>";
+    echo "CVC/CVV Code" . ": " . $cvvcode . " (" . mb_strlen($cvvcode) . " characters)<br><br>";
+    echo "Gender" . ": " . $gender . " (" . mb_strlen($gender) . " characters)<br><br>";
     ?>
 
 </body>
